@@ -19,7 +19,6 @@ In this project, RKCNN is implemented from the mathematical description and pseu
 ## Repository Contents
 
 * `RKCNN_Code.py`: The main Python script containing the RKCNN and KCNN implementations, data loading, benchmarking, and evaluation code (used within the Jupyter Notebook).
-* `RKCNN_20NewsProcessed.csv`: The dataset used for benchmarking (20 Newsgroups with Sentence-BERT embeddings).
 * `requirements.txt`: A list of Python dependencies required to run the code and the Jupyter Notebook.
 * `RKCNN_Benchmarking.ipynb`: The Jupyter Notebook containing the full analysis, including benchmarking and per-class evaluation.
 * `README.md`: This file, providing an overview of the project.
@@ -34,6 +33,7 @@ In this project, RKCNN is implemented from the mathematical description and pseu
     ```bash
     pip install -r requirements.txt
     ```
+* **Dataset:** The `RKCNN_20NewsProcessed.csv` dataset is not included directly in this repository due to its size. You will need to download it from the link provided in the "Running the Code" section.
 
 ### Running the Code
 
@@ -46,12 +46,15 @@ In this project, RKCNN is implemented from the mathematical description and pseu
     ```bash
     pip install -r requirements.txt
     ```
-3.  **Open and run the Jupyter Notebook:**
+3.  **Download the dataset:**
+    The `RKCNN_20NewsProcessed.csv` dataset is available for download from [[Google Drive](https://drive.google.com/file/d/1HiJTX-LuHD5e_qmgaeehxfBH5XjYaX_n/view?usp=sharing)]. Please download this file and place it in the same directory as the Jupyter Notebook (`RKCNN_Benchmarking.ipynb`).
+
+4.  **Open and run the Jupyter Notebook:**
     Navigate to the repository directory in your terminal and run:
     ```bash
     jupyter notebook
     ```
-    This will open the Jupyter Notebook interface in your web browser. Open the `RKCNN_Benchmarking.ipynb` file and run the cells to execute the code and see the results, including the benchmarking and per-class evaluation.
+    This will open the Jupyter Notebook interface in your web browser. Open the `RKCNN_Benchmarking.ipynb` file and run the cells to execute the code and see the results. The notebook is configured to load the `RKCNN_20NewsProcessed.csv` file from the local directory.
 
 ## Results
 
