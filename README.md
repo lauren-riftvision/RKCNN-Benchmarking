@@ -60,19 +60,19 @@ In this project, RKCNN is implemented from the mathematical description and pseu
 
 The benchmarking results presented in the Jupyter Notebook indicate that RKCNN achieves competitive performance, standing strong not only against traditional KNN but also exhibiting a competitive edge against powerful transformer models like BERT. Its innovative approach, leveraging separation scores and a weighted aggregation of predictions from random feature subsets, appears to be an effective strategy for mitigating bias, variance, and overfitting, particularly in high-dimensional datasets. Refer to the notebook for detailed results and visualizations.
 
-### Metrics for RKCNN (20News Dataset):
+### Metrics for RKCNN (20News Dataset, removing noisy classes 0 and 19):
 
 Optimal Parameters:
 k=2, h=100, r=50, m=0.3
 
 | Metric    | Value    |
 |-----------|----------|
-| Accuracy  | 0.747215 |
-| Precision | 0.758503 |
-| Recall    | 0.747215 |
-| F-1 Score | 0.746383 |
+| Accuracy  | 0.780712 |
+| Precision | 0.790230 |
+| Recall    | 0.780712 |
+| F-1 Score | 0.780982 |
 
-Which compares quite well to BERT's 80% accuracy on the same dataset.
+This performance compares favorably with BERT's reported accuracy of approximately 80% on the same 20News dataset (when evaluated on the same subset of classes).
 
 Refer to `RKCNN_Benchmarking.ipynb` for detailed per-class performance metrics and visualizations.
 
